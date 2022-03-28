@@ -1,0 +1,17 @@
+.row{
+    padding: 30px;
+    border-top: solid 1px grey;
+    border-bottom:solid 1px grey;
+}
+
+div{
+    background-color: #000 ;
+}
+
+h1, h3{
+    display: inline;
+}
+ul{
+    padding-top: 20px;
+    padding-left: 100px;
+}
