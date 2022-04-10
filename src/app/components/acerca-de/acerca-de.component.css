@@ -1,11 +1,17 @@
 .row{
-    padding: 20px;
+    padding-left: 100px;
 }
 
 div{
-    background-color: #000000;
+    background-color: rgb(24, 26, 27);
+    color: rgb(209, 205, 199);
 }
 
+h3{
+    color: rgb(209, 205, 199);
+    padding-top: 20px;
+    padding-left: 295px;
+}
 
 /*Config responsive de la foto de perfil*/
 @media (min-width: 576px){
@@ -31,43 +37,119 @@ div{
     }
 }
 
-
-/*Config responsive del nombre*/
-@media (max-width: 575px){
-    #nombre{
-        position: absolute;
-        height: 25%;
-        width: 50%;
-        border-radius: 50%;
-        left: 25%;
-        top: 830px;
-    }
-}
-
-/*Etiqueta nombre*/
-#nombre{
-    font-weight: bold;
-    margin-top: 23%;
+  .code-text {
+    font-family: ubuntu; /*tinos, anonym, ubuntu, prolight, monoid2 */
     font-size: 30px;
-    text-align: start;
-    padding-left: 16%;
-}
-
-#titulo{
-    font-size: 20px;
-    text-align: start;
-    padding-left: 22%;    
-}
-
-h1{
-    padding-top: 30px;
-}
-
-span p {
-    padding-top: 10px;
-    padding-left: 30px;
-}
-
-#nombre, #titulo{
-    padding: -30px;
-}
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    position: relative;
+  }
+  
+  .code-text .class{
+    color: rgb(139, 180, 206);
+    font-family: tinos;
+  }
+  
+  p, p.tap, p.tap2 {
+      color: rgb(209, 205, 199);
+  }
+  
+    .code-text p:nth-child(1) {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      /*Animation*/
+      animation: type 4s steps(500, end);
+      -webkit-animation: type 4s steps(500, end);
+      -moz-animation: type 4s steps(500, end);
+      -o-animation: type 4s steps(500, end);
+      /*Delay*/
+      animation-delay: 1.5s;
+      -webkit-animation-delay: 1.5s;
+      /*Fill mode*/
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+    .code-text p:nth-child(2) {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      /*Animation*/
+      animation: type 5s steps(500, end);
+      -webkit-animation: type 5s steps(500, end);
+      -moz-animation: type 5s steps(500, end);
+      -o-animation: type 5s steps(500, end);
+      /*Delay*/
+      animation-delay: 3.5s;
+      -webkit-animation-delay: 3.5s;
+      /*Fill mode*/
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+    .code-text p:nth-child(3) {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      /*Animation*/
+      animation: type 5s steps(500, end);
+      -webkit-animation: type 5s steps(500, end);
+      -moz-animation: type 5s steps(500, end);
+      -o-animation: type 5s steps(500, end);
+      /*Delay*/
+      animation-delay: 4.5s;
+      -webkit-animation-delay: 4.5s;
+      /*Fill mode*/
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+    .code-text p:nth-child(4) {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      /*Animation*/
+      animation: type 1s steps(500, end);
+      -webkit-animation: type 1s steps(500, end);
+      -moz-animation: type 1s steps(500, end);
+      -o-animation: type 1s steps(500, end);
+      /*Delay*/
+      animation-delay: 6.4s;
+      -webkit-animation-delay: 6.4s;
+      /*Fill mode*/
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+  
+    .blink {
+      animation: blink 1s infinite;
+      -webkit-animation: blink 1s infinite;
+      -moz-animation: blink 0.5s infinite;
+      -o-animation: blink 0.5s infinite;
+    }
+    
+    @keyframes blink {
+      to {
+        opacity: 0;
+      }
+    }
+  
+    @keyframes type {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
